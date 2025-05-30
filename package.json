@@ -1,0 +1,24 @@
+{
+  "name": "design_patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "factory": "tsnd --respawn creational_patterns/factory.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weltonfelix/design_patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weltonfelix/design_patterns/issues"
+  },
+  "homepage": "https://github.com/weltonfelix/design_patterns#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
