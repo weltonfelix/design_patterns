@@ -6,7 +6,8 @@
   "scripts": {
     "factory": "tsnd --respawn creational_patterns/factory.ts",
     "builder": "tsnd --respawn creational_patterns/builder.ts",
-    "command": "tsnd --respawn behavioral_patterns/command.ts"
+    "command": "tsnd --respawn behavioral_patterns/command.ts",
+    "observer": "tsnd --respawn behavioral_patterns/observer.ts"
   },
   "repository": {
     "type": "git",
