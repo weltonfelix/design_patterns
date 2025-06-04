@@ -7,7 +7,8 @@
     "factory": "tsnd --respawn creational_patterns/factory.ts",
     "builder": "tsnd --respawn creational_patterns/builder.ts",
     "command": "tsnd --respawn behavioral_patterns/command.ts",
-    "observer": "tsnd --respawn behavioral_patterns/observer.ts"
+    "observer": "tsnd --respawn behavioral_patterns/observer.ts",
+    "strategy": "tsnd --respawn behavioral_patterns/strategy.ts"
   },
   "repository": {
     "type": "git",
