@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "factory": "tsnd --respawn creational_patterns/factory.ts"
+    "factory": "tsnd --respawn creational_patterns/factory.ts",
+    "builder": "tsnd --respawn creational_patterns/builder.ts"
   },
   "repository": {
     "type": "git",
