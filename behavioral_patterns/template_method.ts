@@ -1,6 +1,7 @@
 // Template Method Pattern
 // This pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses.
 // It lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+// https://refactoring.guru/design-patterns/template-method
 
 /**
  * Notifier is an abstract class that defines the template method notify.
