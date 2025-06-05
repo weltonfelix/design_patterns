@@ -1,8 +1,23 @@
+// Strategy Pattern
+// The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+// It lets the algorithm vary independently from clients that use it.
+// https://refactoring.guru/design-patterns/strategy
+
+/**
+ * CipherStrategy is an interface that defines the methods for encryption and decryption.
+ * It allows different cipher algorithms to be implemented and used interchangeably.
+ * This is the Strategy interface in the Strategy Pattern.
+ */
 interface CipherStrategy {
   encrypt(text: string): string;
   decrypt(text: string): string;
 }
 
+/**
+ * CaesarCipher is a concrete implementation of the CipherStrategy interface.
+ * It implements the Caesar cipher algorithm for encryption and decryption.
+ * This is one of the concrete strategies in the Strategy Pattern.
+ */
 class CaesarCipher implements CipherStrategy {
   private shift: number;
 
@@ -33,6 +48,11 @@ class CaesarCipher implements CipherStrategy {
   }
 }
 
+/**
+ * VigenereCipher is another concrete implementation of the CipherStrategy interface.
+ * It implements the Vigenère cipher algorithm for encryption and decryption.
+ * This is another concrete strategy in the Strategy Pattern.
+ */
 class VigenereCipher implements CipherStrategy {
   private key: string;
 
@@ -77,6 +97,11 @@ class VigenereCipher implements CipherStrategy {
   }
 }
 
+/**
+ * TextCipher is a context class that uses a CipherStrategy to perform encryption and decryption.
+ * It allows the strategy to be changed at runtime, making it flexible and extensible.
+ * This is the Context in the Strategy Pattern.
+ */
 class TextCipher {
   private strategy: CipherStrategy;
 
@@ -84,6 +109,12 @@ class TextCipher {
     this.strategy = strategy;
   }
 
+  /**
+   * setStrategy allows changing the cipher strategy at runtime.
+   * This enables the TextCipher to use different encryption and decryption algorithms without changing its code.
+   * This is how the Strategy Pattern allows for dynamic behavior.
+   * @param strategy Sets the cipher strategy to be used for encryption and decryption.
+   */
   setStrategy(strategy: CipherStrategy): void {
     this.strategy = strategy;
   }
@@ -96,6 +127,11 @@ class TextCipher {
     return this.strategy.decrypt(text);
   }
 }
+
+// Example usage
+// Create instances of CaesarCipher and VigenereCipher strategies.
+// Use them with the TextCipher context to perform encryption and decryption.
+// This demonstrates how the Strategy Pattern allows for interchangeable algorithms.
 
 const caesar = new CaesarCipher(3);
 const vigenere = new VigenereCipher('KEY');
