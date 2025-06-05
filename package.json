@@ -8,7 +8,8 @@
     "builder": "tsnd --respawn creational_patterns/builder.ts",
     "command": "tsnd --respawn behavioral_patterns/command.ts",
     "observer": "tsnd --respawn behavioral_patterns/observer.ts",
-    "strategy": "tsnd --respawn behavioral_patterns/strategy.ts"
+    "strategy": "tsnd --respawn behavioral_patterns/strategy.ts",
+    "template_method": "tsnd --respawn behavioral_patterns/template_method.ts"
   },
   "repository": {
     "type": "git",
