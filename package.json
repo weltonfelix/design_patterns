@@ -9,7 +9,8 @@
     "command": "tsnd --respawn behavioral_patterns/command.ts",
     "observer": "tsnd --respawn behavioral_patterns/observer.ts",
     "strategy": "tsnd --respawn behavioral_patterns/strategy.ts",
-    "template_method": "tsnd --respawn behavioral_patterns/template_method.ts"
+    "template_method": "tsnd --respawn behavioral_patterns/template_method.ts",
+    "composite": "tsnd --respawn structural_patterns/composite.ts"
   },
   "repository": {
     "type": "git",
